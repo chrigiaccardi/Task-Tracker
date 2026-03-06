@@ -9,5 +9,7 @@ import { Button } from "../button/button";
 })
 export class Header {
   protected readonly title = signal('Task Tracker');
-
+  toggleAddTask() {
+    
+  }
 }

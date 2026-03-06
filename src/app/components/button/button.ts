@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, Output } from '@angular/core';
 import { NgClass } from '@angular/common';
+import { EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-button',
@@ -10,8 +11,9 @@ import { NgClass } from '@angular/common';
 export class Button {
   testoBtn: string = 'Aggiungi Task'
   classAddBtn = true
+  @Output() btnClick = new EventEmitter
 
-  aggiungiTask() {
-    
+  onClick() {
+    this.btnClick.emit()
   }
 }
