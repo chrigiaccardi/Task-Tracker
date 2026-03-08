@@ -1,10 +1,8 @@
-import { Component, signal } from '@angular/core';
-import { Header } from "./components/header/header";
-import { Tasks } from './components/tasks/tasks';
+import { Component} from '@angular/core';
 
 @Component({
   selector: 'app-root',
-  imports: [Header, Tasks],
+  imports: [],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
