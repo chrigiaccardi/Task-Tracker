@@ -1,4 +1,4 @@
 <div class="task">
-    <h3>{{task?.text}} <mat-icon>close</mat-icon> </h3>
+    <h3>{{task?.text}} <mat-icon (click)="onDelete(task!)" >close</mat-icon> </h3>
     <p>{{task?.day}}</p>
 </div>

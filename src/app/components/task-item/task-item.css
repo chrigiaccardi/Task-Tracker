@@ -12,4 +12,5 @@ mat-icon{
     position: absolute;
     color: red;
     right: 8px;
+    cursor: pointer;
 }

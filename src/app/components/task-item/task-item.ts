@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
 import { Task } from '../../interface/task';
 import { MatIcon } from '@angular/material/icon';
 
@@ -10,4 +10,9 @@ import { MatIcon } from '@angular/material/icon';
 })
 export class TaskItem {
   @Input() task?: Task 
+  @Output() onDeleteTask: EventEmitter<Task> = new EventEmitter
+
+onDelete(task: Task) {
+  this.onDeleteTask.emit(task)
+  }
 }

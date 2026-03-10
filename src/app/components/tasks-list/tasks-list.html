@@ -1,7 +1,6 @@
 <div class="taskList">
-    <h3>Lunghezza Array {{tasks.length}}</h3>
-    @for (task of (tasks1 | async); track task.id){
-        <app-task-item [task]="task"/>
+    @for (task of (tasks | async); track task.id){
+        <app-task-item [task]="task" (onDeleteTask)="deleteTask(task)" />
     }
 </div>
 

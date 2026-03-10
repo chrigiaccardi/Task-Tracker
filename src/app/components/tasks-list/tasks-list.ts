@@ -1,25 +1,23 @@
-import { ChangeDetectorRef, Component, inject, OnInit } from '@angular/core';
-import { Task } from '../../interface/task';
+import {Component, inject} from '@angular/core';
 import { TaskItem } from '../task-item/task-item';
 import { TaskService } from '../../services/task-service';
 import { AsyncPipe } from '@angular/common';
+import { Task } from '../../interface/task';
 
 @Component({
   selector: 'app-tasks-list',
-  imports: [TaskItem,AsyncPipe],
+  imports: [TaskItem, AsyncPipe],
   templateUrl: './tasks-list.html',
   styleUrl: './tasks-list.css',
 })
 export class TasksList {
-  // constructor(private taskService: TaskService, private cdr: ChangeDetectorRef) { }
+  // Utilizzo dell'inject per restituire la dipendenza prima del constructore
   taskService = inject(TaskService)
-  tasks1 = this.taskService.getTasks()
-  tasks: Task[] = []
-// ngOnInit(): void {
-//   this.taskService.getTasks().subscribe((tasks) => {
-//     this.tasks = tasks;
-//     console.log(this.tasks);
-//     this.cdr.detectChanges()
-//   });
-// }
+// utilizzo dell'async pipe nel ciclo @for così non serve .subscribe visto che lo fa in automatico - metodo creato nel service
+  tasks = this.taskService.getTasks()
+  //creiamo il metodo deleteTask(task) per cancellare il task richiamando quello creato nel service
+  deleteTask(task: Task) {
+    this.taskService.deleteTask(task)
+    console.log(task)
+  }
 }
