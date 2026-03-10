@@ -1,5 +1,6 @@
 <div class="taskList">
-    @for (task of tasks; track task.id){
+    <h3>Lunghezza Array {{tasks.length}}</h3>
+    @for (task of (tasks1 | async); track task.id){
         <app-task-item [task]="task"/>
     }
 </div>
