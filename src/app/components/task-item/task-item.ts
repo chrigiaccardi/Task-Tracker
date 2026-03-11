@@ -1,10 +1,11 @@
 import { Component, Input, Output, EventEmitter } from '@angular/core';
 import { Task } from '../../interface/task';
 import { MatIcon } from '@angular/material/icon';
+import { NgClass } from '@angular/common';
 
 @Component({
   selector: 'app-task-item',
-  imports: [MatIcon],
+  imports: [MatIcon, NgClass],
   templateUrl: './task-item.html',
   styleUrl: './task-item.css',
 })

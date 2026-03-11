@@ -1,40 +1,28 @@
 {
-    "tasks":[
+  "tasks": [
     {
-        "id": 1,
-        "text": "Partita di calcio",
-        "day": "6 Marzo 2026 alle 12:30",
-        "reminder": false
+      "id": "1",
+      "text": "Partita di calcio",
+      "day": "6 Marzo 2026 alle 12:30",
+      "reminder": true
     },
     {
-        "id": 2,
-        "text": "DJ per matrimonio",
-        "day": "7 Marzo 2026 alle 13:30",
-        "reminder": false
+      "id": "2",
+      "text": "Partita di dfsd",
+      "day": "6 Marzo 2026 alle 12:30",
+      "reminder": false
     },
     {
-        "id": 3,
-        "text": "Partenza Formula 1",
-        "day": "8 Marzo 2026 alle 14:30",
-        "reminder": true
+      "id": "4",
+      "text": "Partita di dfaaasd",
+      "day": "6 Marzo 2026 alle 12:30",
+      "reminder": true
     },
     {
-        "id": 4,
-        "text": "Incontro Matrimonio",
-        "day": "9 Marzo 2026 alle 15:30",
-        "reminder": true
-    },
-    {
-        "id": 5,
-        "text": "Giro in MTB",
-        "day": "10 Marzo 2026 alle 16:30",
-        "reminder": true
-    },
-    {
-        "id": 6,
-        "text": "Studiare Angular",
-        "day": "11 Marzo 2026 alle 17:30",
-        "reminder": true
+      "id": "3",
+      "text": "Partita di dfsasdsad",
+      "day": "6 Marzo 2026 alle 12:30",
+      "reminder": false
     }
-    ]
+  ]
 }

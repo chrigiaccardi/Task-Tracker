@@ -16,8 +16,9 @@ export class TasksList {
 // utilizzo dell'async pipe nel ciclo @for così non serve .subscribe visto che lo fa in automatico - metodo creato nel service
   tasks = this.taskService.getTasks()
   //creiamo il metodo deleteTask(task) per cancellare il task richiamando quello creato nel service
-  deleteTask(task: Task) {
-    this.taskService.deleteTask(task)
-    console.log(task)
-  }
+ deleteTask(task: Task) {
+  this.taskService.deleteTask(task).subscribe(() => {
+    this.tasks = this.taskService.getTasks();
+  });
+}
 }
