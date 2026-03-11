@@ -20,5 +20,9 @@ export class TasksList {
   this.taskService.deleteTask(task).subscribe(() => {
     this.tasks = this.taskService.getTasks();
   });
-}
+ }
+  toggleReminder(task: Task) {
+    task.reminder = !task.reminder;
+    this.taskService.updateTaskReminder(task).subscribe();
+  }
 }
