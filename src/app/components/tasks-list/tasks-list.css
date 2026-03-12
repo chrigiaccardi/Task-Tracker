@@ -1,3 +1,6 @@
 .taskList{
     padding: 15px;
 }
+.taskListOn{
+    display: none;
+}

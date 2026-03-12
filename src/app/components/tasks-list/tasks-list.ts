@@ -12,6 +12,7 @@ import { AddTask } from "../add-task/add-task";
   styleUrl: './tasks-list.css',
 })
 export class TasksList {
+
   // inserimento per aggiornamento live della UI, forza Angular a riaggiornare e vedere i cambiamenti
   private cdr = inject(ChangeDetectorRef)
 
