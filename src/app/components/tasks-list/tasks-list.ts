@@ -3,10 +3,11 @@ import { TaskItem } from '../task-item/task-item';
 import { TaskService } from '../../services/task-service';
 import { AsyncPipe } from '@angular/common';
 import { Task } from '../../interface/task';
+import { AddTask } from "../add-task/add-task";
 
 @Component({
   selector: 'app-tasks-list',
-  imports: [TaskItem, AsyncPipe],
+  imports: [TaskItem, AsyncPipe, AddTask],
   templateUrl: './tasks-list.html',
   styleUrl: './tasks-list.css',
 })

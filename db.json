@@ -10,7 +10,7 @@
       "id": "2",
       "text": "Partita di dfsd",
       "day": "6 Marzo 2026 alle 12:30",
-      "reminder": true
+      "reminder": false
     },
     {
       "id": "4",
@@ -24,6 +24,5 @@
       "day": "6 Marzo 2026 alle 12:30",
       "reminder": false
     }
-  ],
-  "$schema": "./node_modules/json-server/schema.json"
+  ]
 }
