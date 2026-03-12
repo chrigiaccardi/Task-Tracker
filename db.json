@@ -7,22 +7,11 @@
       "reminder": false
     },
     {
-      "id": "2",
-      "text": "Partita di dfsd",
-      "day": "6 Marzo 2026 alle 12:30",
-      "reminder": false
-    },
-    {
-      "id": "4",
-      "text": "Partita di dfaaasd",
-      "day": "6 Marzo 2026 alle 12:30",
-      "reminder": false
-    },
-    {
-      "id": "3",
-      "text": "Partita di dfsasdsad",
-      "day": "6 Marzo 2026 alle 12:30",
-      "reminder": false
+      "id": "b605",
+      "text": "Formula 1",
+      "day": "Domenica Mattina alle 8",
+      "reminder": true
     }
-  ]
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
 }
