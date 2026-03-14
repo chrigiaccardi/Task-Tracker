@@ -2,6 +2,8 @@ import { Component, Output, EventEmitter } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 import { FormsModule } from '@angular/forms';
 import { Task } from '../../interface/task';
+import { UiService } from '../../services/ui-service';
+import { Subscription } from 'rxjs';
 
 
 @Component({
@@ -11,12 +13,18 @@ import { Task } from '../../interface/task';
   styleUrl: './add-task.css',
 })
 export class AddTask {
-@Output() onAddTask: EventEmitter<Task> = new EventEmitter
+  @Output() onAddTask: EventEmitter<Task> = new EventEmitter
 
   text: string = ""
   day: string = ""
   reminder: boolean = false
-
+  showAddTask: boolean = false
+  subscription: Subscription;
+  
+  constructor(private uiService: UiService) { 
+      this.subscription = this.uiService.onToggle().subscribe(value => (this.showAddTask = value))
+  }
+  
   onSubmit() {
     if (!this.text) {
       alert('Inserisci un task valido')

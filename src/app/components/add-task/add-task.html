@@ -1,4 +1,4 @@
-<form (ngSubmit)="onSubmit()">
+@if (showAddTask) {<form (ngSubmit)="onSubmit()">
 <div class="formControl">
     <label for="text">Task</label>
     <input type="text" name="text" [(ngModel)]="text" id="text" placeholder="Aggiungi Task" required>
@@ -12,4 +12,4 @@
     <input type="checkbox" name="reminder" [(ngModel)]="reminder" id="reminder">
 </div>
 <button matButton="elevated" type="submit" class="btn">Salva Task</button>
-</form>
+</form>}

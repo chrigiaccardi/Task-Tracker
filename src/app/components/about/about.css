@@ -1,0 +1,9 @@
+.about{
+    align-items: center;
+    text-align: center;
+    background-color: antiquewhite;
+    padding: 5px;
+    margin: 10px;
+    border: 1px solid lightgray;
+    border-radius: 20px;
+}
